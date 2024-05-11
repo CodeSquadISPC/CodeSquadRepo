@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NuestraseleccionCarruselComponent } from './nuestraseleccion-carrusel/nuestraseleccion-carrusel.component';
+// import { CategoriaComponent } from './categoria/categoria.component'; (agregar el componente en imports mas abajo)
 
 @Component({
   selector: 'app-nuestraseleccion',
@@ -11,3 +12,4 @@ import { NuestraseleccionCarruselComponent } from './nuestraseleccion-carrusel/n
 export class NuestraseleccionComponent {
 
 }
+
