@@ -6,6 +6,7 @@ import { CategoriaComponent } from './pages/nuestraseleccion/categoria/categoria
 
 export const routes: Routes = [
     { path: 'nuestraseleccion', component: NuestraseleccionComponent },
-    { path: 'inicio', title: 'Login', component: InicioComponent }
+    { path: 'inicio', title: 'Login', component: InicioComponent },
+    {path: 'categoria', title: 'Categoria', component:CategoriaComponent}
 ]
 
