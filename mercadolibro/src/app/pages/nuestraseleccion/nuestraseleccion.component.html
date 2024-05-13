@@ -1,3 +1,24 @@
 <app-nuestraseleccion-carrusel></app-nuestraseleccion-carrusel>
 
-    
+<section>
+  <div class="container">
+    <h2 class="text-center">Nuestra selección</h2>
+    <ul>
+      <li *ngFor="let book of books">
+        <h3>{{ book.titulo }}</h3>
+        <p>Autor: {{ book.autor }}</p>
+        <p>País: {{ book.pais }}</p>
+        <p>Idioma: {{ book.idioma }}</p>
+        <p>Páginas: {{ book.paginas }}</p>
+        <p>Año: {{ book.anio }}</p>
+        <p>ISBN: {{ book.ISBN }}</p>
+        <p>Categoría: {{ book.categoria }}</p>
+        <p>Descripción: {{ book.descripcion }}</p>
+        <p>Precio: {{ book.precio }}</p>
+        <p>Stock: {{ book.stock }}</p>
+        <img src="{{ book.portada }}" alt="Portada del libro {{ book.titulo }}">
+      </li>
+    </ul>
+  </div>
+</section>
+
