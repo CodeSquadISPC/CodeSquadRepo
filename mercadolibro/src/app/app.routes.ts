@@ -8,6 +8,10 @@ import { LandingComponent } from './pages/landing/landing.component';
 import { DescripcionComponent } from './pages/nuestraseleccion/descripcion/descripcion.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProductoComponent } from './pages/nuestraseleccion/producto/producto.component';
+import { AuthGuard } from './guards/auth.guard';
+import { LoginComponent } from '../app/pages/login/login.component';
+import { ProtectedComponent } from './protected/protected.component';
+
 
 export const routes: Routes = [
     { path: 'landing', title: 'Home', component: LandingComponent },
@@ -19,5 +23,8 @@ export const routes: Routes = [
     { path: 'categoria', title: 'Categoria', component: CategoriaComponent },
     { path: 'descripcion', title: 'Descripcion', component: DescripcionComponent },
     { path: 'dashboard', title: 'Mi perfil', component: DashboardComponent },
-    { path: 'producto', title: "Producto", component: ProductoComponent }
+    { path: 'producto', title: "Producto", component: ProductoComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'protected', component: ProtectedComponent, canActivate: [AuthGuard] },
+    { path: '**', redirectTo: 'login' }
 ]
